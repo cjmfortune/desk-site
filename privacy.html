@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DESK 개인정보처리방침</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="back"><a href="./">← DESK</a></p>
+<h1>DESK 개인정보처리방침</h1>
+<p class="meta">시행일: 2026년 10월 26일</p>
+
+<p>최종민(이하 "운영자")은 PC용 AI 브라우저 도우미 DESK(이하 "DESK")를 제공하면서 이용자의 개인정보를 다음과 같이 처리합니다.</p>
+
+<h2>1. 운영자가 받는 정보</h2>
+<p>DESK는 로그인한 사람만 쓸 수 있습니다. 로그인은 Google 계정으로 하며, 인증 서비스 Supabase를 통해 처리됩니다.</p>
+<ul>
+<li><strong>받는 항목:</strong> Google 계정 이메일 주소, 이름(Google 프로필의 표시 이름), 로그인 일시</li>
+<li><strong>요청하는 Google 권한:</strong> <code>openid</code>, <code>email</code>, <code>profile</code>만 요청합니다. Gmail, 드라이브, 캘린더 등 다른 Google 데이터에는 접근하지 않습니다.</li>
+<li><strong>목적:</strong> 로그인한 이용자인지 확인하고, 이용자에게 로그인 상태(이메일, 이름)를 보여 주기 위해서만 씁니다.</li>
+<li><strong>저장 위치:</strong> Supabase 인증 서버(대한민국 서울 리전)</li>
+</ul>
+
+<h2>2. 이용자 PC에만 저장되는 정보</h2>
+<p>다음 정보는 이용자 PC에만 저장되며 운영자에게 전송되지 않습니다.</p>
+<ul>
+<li>대화 기록, 기억해 둔 내용(메모리), 반복 작업 설정</li>
+<li>비밀번호 보관함(Windows 보안 저장소로 암호화)</li>
+<li>내 정보(이용자가 직접 입력한 이름·연락처 등), 설정</li>
+<li>로그인 상태를 유지하기 위한 인증 토큰(Windows 보안 저장소로 암호화)</li>
+</ul>
+
+<h2>3. 이용자가 선택한 외부 서비스로 전송되는 정보</h2>
+<p>DESK는 이용자가 고르거나 켠 기능에 따라 다음 서비스와 직접 통신합니다. 이때 전송되는 정보는 각 서비스의 개인정보처리방침을 따릅니다.</p>
+<ul>
+<li><strong>AI 공급자(OpenAI, Anthropic 중 이용자가 선택):</strong> 이용자가 보낸 요청, 작업 중인 웹 페이지의 내용과 화면 이미지</li>
+<li><strong>TypeSafe Jev(자동 진행 기능을 켠 경우):</strong> 작업 중인 화면 정보</li>
+<li><strong>Slack(이용자가 연동한 경우):</strong> 작업 알림과 승인 요청 내용</li>
+<li><strong>GitHub:</strong> 업데이트 확인을 위한 버전 정보 요청(개인정보는 보내지 않습니다)</li>
+</ul>
+
+<h2>4. 제3자 제공과 처리 위탁</h2>
+<p>운영자는 이용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다. 로그인 처리를 위해 다음 업체에 처리를 맡깁니다.</p>
+<ul>
+<li>Supabase, Inc. — 로그인 인증과 계정 정보 보관</li>
+<li>Google LLC — Google 계정 로그인</li>
+</ul>
+
+<h2>5. 보관 기간과 삭제</h2>
+<ul>
+<li>로그인 계정 정보는 이용자가 삭제를 요청할 때까지 보관하고, 요청을 받으면 지체 없이 삭제합니다.</li>
+<li>PC에 저장된 정보는 이용자가 DESK를 삭제하거나 데이터 폴더(<code>%USERPROFILE%\.desk</code>)를 지우면 삭제됩니다.</li>
+<li>DESK에서 로그아웃하면 PC에 저장된 인증 토큰이 삭제됩니다.</li>
+</ul>
+
+<h2>6. Google 사용자 데이터</h2>
+<p>DESK가 Google API로 받은 정보의 사용과 다른 앱으로의 전송은 제한적 사용 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다. Google 계정 정보는 위 1항의 목적 외에는 쓰지 않으며, 광고나 AI 모델 학습에 쓰지 않습니다.</p>
+
+<h2>7. 이용자의 권리와 문의</h2>
+<p>이용자는 언제든지 자신의 개인정보 열람, 정정, 삭제를 요청할 수 있습니다. 문의와 요청은 아래로 보내 주세요.</p>
+<ul>
+<li>개인정보 보호 담당: 최종민</li>
+<li>이메일: <a href="mailto:iam220709@gmail.com">iam220709@gmail.com</a></li>
+</ul>
+
+<h2>8. 방침의 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 시행일과 함께 공지합니다.</p>
+</main>
+</body>
+</html>
